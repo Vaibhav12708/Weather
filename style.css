@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    /* background-image:url(img.jpg); */
+    /* Full height */
+  /* height: 100%; */
+
+  /* Center and scale the image nicely */
+  /* background-position: center; */
+  /* background-repeat: no-repeat;
+  background-size: cover; */ 
+    /* width: 100%;
+    height: 100%; */
+    overflow: hidden;
+    position: relative;
+    background-image: url(img.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    animation: change 20s infinite ease-in-out;
+}
+.container{
+    /* margin: 0 auto; */
+    padding: 30px;
+    border: 5px solid #ffff;
+    box-shadow: 4px 4px 10px #fdfdfd;
+    /* width: min(500px,100%); */
+}
+.location{
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 30px;   
+}
+.location input{
+    outline: none;
+    font-size: 25px;
+    padding: 14px 20px;
+    border-radius: 9em 0em 0em 9em;
+    border: 2px solid #ffff;
+    border-right: none;
+    background-color: transparent;
+    color: #ffff;
+}
+button.search{
+    outline: none;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 0em 9em 9em 0em;
+    border: 2px solid #ffff;
+    background-color: transparent;
+    border-left: none;
+}
+svg{
+    color:#ffff;
+}
+svg:hover{
+    color:rgb(255, 255, 255);
+}
+h2{
+    font-size: 1.6em;
+    margin: 15px 0px;
+    /* color: #fecd1a; */
+}
+.temperature{
+    margin-top: 30px;
+    display: flex;
+}
+.temperature-degree{
+    font-size: 65px;
+    
+    
+}
+.degree{
+    font-size: 40px;
+}
+.temperature-description{
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    .location input{
+        width: 180px;
+    }
+    .container{
+        width: 80%;
+    }
+    .location{
+        justify-content: flex-start;
+    }
+}
+
+.fetchBtn{
+    background:    #D2DAFF;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    color:#B1B2FF;
+  }
+  
+  #des{
+    box-sizing: border-box;
+      padding: 20px;
+      border-radius: 10px 10px 0 0;
+      border: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,.3);
+      font-size: 20px;
+    background-color: #EEF1FF;
+    color: #B1B2FF;
+  }
+
+  .fetchDes{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+  }
+  
+@keyframes change {
+    0% {
+        background-image: url(img1.jpg);
+    }
+    20% {
+        background-image: url(img2.jpg);
+    }
+    40% {
+        background-image: url(img3.jpg);
+    }
+    60% {
+        background-image: url(img4.jpg);
+    }
+    80% {
+        background-image: url(img5.jpg);
+    }
+    100% {
+        background-image: url(img1.jpg);
+    }
+}
+
+.id{
+    position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 1104px){
+    .about .about-content .left .image{
+        height: 350px;
+        width: 350px;
+}
+}
+@media (max-width: 991px){
+    .max-width{
+            padding: 0 50px;
+        }
+}
