@@ -19,9 +19,6 @@ https://vaibhav12708.github.io/Weather/
 # Weather Interactive Webpage
 This project is an interactive webpage that displays real-time weather information for a specific location. The webpage allows users to enter a location and view the current weather conditions, as well as a 5-day forecast.
 
-# Table of Contents
-Features
-
 # Technologies Used
 Installation
 Usage
@@ -45,7 +42,8 @@ CSS
 JavaScript
 Bootstrap
 OpenWeatherMap API
-Installation
+
+## Installation
 To install this project, simply clone the repository and open the index.html file in a web browser.
 
 bash
@@ -53,7 +51,8 @@ Copy code
 git clone https://github.com/<username>/<repository>.git
 cd <repository>
 open index.html
-Usage
+
+## Usage
 To use this weather interactive webpage, simply enter a location in the search bar and click the "Search" button. The webpage will display the current weather information and the 5-day forecast for the location entered.
 
 # Contributing
